@@ -21,3 +21,38 @@ h6 {
 p {
   margin: 0;
 }
+
+:root{
+  --dark: #313715;
+  --light: #E2F9B8;
+  --heading: #939F5C;
+  --borderline: #D16014;
+}
+
+header{
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1{
+  background-color: var(--light);
+  color: var(--dark);
+  width:25%;
+  padding: 10px 10px 10px 180px;
+  margin: 10px 10px 10px 0;
+}
+
+nav li, nav a{
+  color: var(--light);
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+}
