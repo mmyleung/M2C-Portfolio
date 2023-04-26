@@ -56,3 +56,12 @@ nav {
   justify-content: space-evenly;
   width: 40%;
 }
+
+.hero-banner {
+  background-image: url(../images/lisa-yount-zcZPjDqG-Ao-unsplash.jpg);
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: top;
+  background-size: cover;
+}
