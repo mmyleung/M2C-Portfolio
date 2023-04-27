@@ -194,9 +194,77 @@ nav {
 }
 
 @media only screen and (max-width:991px) {
+  header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  h1{
+    padding: 5px;
+    text-align: center;
+  }
+
+  #profile-img{
+    display: static;
+    background-size: cover;
+  }
+
+  .hero-banner{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-banner h2 {
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .page-section {
+    grid-template-columns: 1fr 2fr;
+  }
+
 
 }
 
 @media only screen and (max-width:767px) {
-  
+ nav {
+  justify-content: space-between;
+ }
+ 
+ .page-section {
+  display: block;
+}
+
+.section-header {
+  justify-content: center;
+  border-right: none;
+  border-bottom: 5px solid var(--border);
+}
+
+#about-info {
+  text-align: center;
+  margin: 5px;
+}
+#grid-work {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "work1"
+  "work2"
+  "work3"
+  "work4"
+  "work5";
+}
+
+.grid-item{
+  margin:5px;
+}
+
+#container-contact{
+  margin-bottom: 20px;
+}
+
 }
