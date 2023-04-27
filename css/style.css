@@ -85,5 +85,118 @@ nav {
   position: relative;
   margin-top: 180px;
   height: 50px;
-  padding: 10px 10px 10px 200px;  
+  padding: 10px 120px 10px 10px;  
+}
+
+.page-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "sectionTitle sectionInfo"
+}
+
+.section-header {
+  grid-area: sectionTitle;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 25px;
+  padding-right:15px;
+  border-right: 5px solid var(--border);
+  color: var(--heading);
+}
+
+.section-info {
+  grid-area: sectionInfo;
+}
+
+#about-info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: var(--dark);
+
+}
+
+#grid-work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "work1 work1"
+  "work2 work3"
+  "work4 work5";
+}
+
+#work1 {
+  grid-area: work1;
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+#work2 {
+  grid-area: work2;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+#work3 {
+  grid-area: work3;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+
+#work4 {
+  grid-area: work4;
+  background-image: url(../images/02-portfolio-4.jpg);
+}
+
+#work5 {
+  grid-area: work5;
+  background-image: url(../images/02-run-buddy.jpg);
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid var(--light);
+  margin: 0 15px 15px 0;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.grid-item:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.workTitle {
+  position:relative;
+  margin-top: 120px;
+  background-color: var(--light);
+  width: fit-content;
+  padding: 5px;
+}
+
+#container-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-child a{
+  color: var(--dark);
+}
+
+.contact-child a:hover {
+  color:var(--light);
+}
+
+@media only screen and (max-width:991px) {
+
+}
+
+@media only screen and (max-width:767px) {
+  
 }
