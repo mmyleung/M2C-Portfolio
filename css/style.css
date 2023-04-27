@@ -23,10 +23,10 @@ p {
 }
 
 :root{
-  --dark: #313715;
-  --light: #E2F9B8;
-  --heading: #939F5C;
-  --borderline: #D16014;
+--dark: #002301ff;
+--heading: #014A13ff;
+--light: #21C47Bff;
+--border: #14A45Cff;
 }
 
 header{
@@ -64,4 +64,26 @@ nav {
   background-position-x: left;
   background-position-y: top;
   background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#profile-img {
+  background-image: url(../images/mina\ memoji.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:200px;
+  height:200px;
+  border-radius: 150px;
+  position: relative;
+  margin: 15px 0 0 15px;
+}
+
+.hero-banner h2 {
+  background-color: var(--light);
+  position: relative;
+  margin-top: 180px;
+  height: 50px;
+  padding: 10px 10px 10px 200px;  
 }
